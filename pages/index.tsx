@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="Stefan - PVC i Aluminijumska Stolarija | Reparacija i Farbanje"
-        description="Specijalizovani za reparaciju, farbanje i kompletnu obnovu PVC i aluminijumske stolarije. Profesionalan pristup sa garancijom kvaliteta. Besplatan predračun."
+        title="S_Decor_Bg - Profesionalno Farbanje PVC i Aluminijumske Stolarije Beograd"
+        description="Specijalizovani za spray farbanje i reparaciju PVC i aluminijumske stolarije u Beogradu. Kvalitetno farbanje pištoljem, promena boje prozora, vrata, fasada. Održavanje i renovacija stolarije. Dugogodišnje iskustvo, garancija kvaliteta. Pozovite za besplatan predračun!"
         url="https://your-domain.com"
       />
       <div className="min-h-screen bg-white">

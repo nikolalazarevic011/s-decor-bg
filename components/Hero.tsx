@@ -68,16 +68,15 @@ export function Hero() {
           </div>
 
           <div className="lg:order-2">
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
               <Image
-                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2031&q=80"
-                alt="PVC i aluminijumska stolarija"
-                width={600}
+                src="/Sophisticated_Carpentry_Logo_with_Spray_Paint_Can-removebg-preview.png"
+                alt="S_Decor_Bg Logo - Profesionalno farbanje PVC i aluminijumske stolarije"
+                width={500}
                 height={500}
-                className="rounded-lg shadow-2xl w-full h-[500px] object-cover"
+                className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
+                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
-
             </div>
           </div>
         </div>
