@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F8FAFC"/>
+  
+  <!-- Wall -->
+  <rect x="0" y="0" width="800" height="600" fill="#E2E8F0"/>
+  
+  <!-- Window Frame (PVC) -->
+  <rect x="150" y="100" width="500" height="400" rx="8" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="4"/>
+  
+  <!-- Outer Frame -->
+  <rect x="170" y="120" width="460" height="360" rx="4" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  
+  <!-- Window Panes -->
+  <rect x="190" y="140" width="200" height="160" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="410" y="140" width="200" height="160" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="190" y="320" width="200" height="140" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="410" y="320" width="200" height="140" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  
+  <!-- Window Handles -->
+  <circle cx="590" cy="220" r="8" fill="#374151"/>
+  <rect x="582" y="216" width="16" height="8" rx="4" fill="#6B7280"/>
+  
+  <!-- Repair Tools -->
+  <!-- Screwdriver -->
+  <line x1="700" y1="150" x2="700" y2="220" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+  <rect x="695" y="130" width="10" height="20" rx="5" fill="#1F2937"/>
+  
+  <!-- Drill -->
+  <rect x="720" y="250" width="60" height="20" rx="10" fill="#059669"/>
+  <circle cx="730" cy="260" r="6" fill="#047857"/>
+  <rect x="770" y="258" width="15" height="4" rx="2" fill="#374151"/>
+  
+  <!-- Paint Brush -->
+  <line x1="50" y1="400" x2="120" y2="470" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+  <rect x="45" y="395" width="15" height="30" rx="3" fill="#8B5CF6" transform="rotate(45 52.5 410)"/>
+  
+  <!-- Repair Indicators -->
+  <!-- Before (damaged) -->
+  <circle cx="250" cy="200" r="15" fill="#EF4444" opacity="0.7"/>
+  <path d="M245 195 L255 205 M255 195 L245 205" stroke="white" stroke-width="2"/>
+  
+  <!-- After (fixed) -->
+  <circle cx="350" cy="200" r="15" fill="#10B981"/>
+  <path d="M345 200 L348 203 L355 195" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Arrow showing repair process -->
+  <path d="M270 200 L330 200 M320 190 L330 200 L320 210" stroke="#6366F1" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- PVC Label -->
+  <rect x="200" y="520" width="400" height="40" rx="20" fill="#3B82F6"/>
+  <text x="400" y="545" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">REPARACIJA PVC PROZORA</text>
+</svg>

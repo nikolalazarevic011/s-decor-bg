@@ -1,66 +1,52 @@
 import { useState } from 'react';
-import Image from 'next/image';
 import { Button } from './ui/button';
+import { Instagram, ExternalLink } from 'lucide-react';
 
 export function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('all');
 
-  const projects = [
+  const instagramPosts = [
     {
       id: 1,
-      title: "Reparacija PVC Prozora",
       category: "pvc",
-      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      embedUrl: "https://www.instagram.com/p/DLRa9jLCA2f/embed",
+      title: "Reparacija PVC Prozora",
       description: "Kompletan servis PVC prozora sa zamenom zaptivača"
     },
     {
       id: 2,
+      category: "aluminum", 
+      embedUrl: "https://www.instagram.com/p/DLzMUlxCeuf/embed",
       title: "Farbanje Aluminijumskih Vrata",
-      category: "aluminum",
-      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Profesionalna promena boje aluminijumskih ulaznih vrata"
     },
     {
       id: 3,
-      title: "Renovacija PVC Stolarije",
       category: "pvc",
-      image: "https://images.unsplash.com/photo-1571069422119-2cd90b11ad4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Kompletna renovacija PVC prozora i vrata na stambenom objektu"
+      embedUrl: "https://www.instagram.com/p/DL4AGpCC7Wn/embed",
+      title: "Renovacija PVC Stolarije",
+      description: "Kompletna renovacija PVC prozora i vrata"
     },
     {
       id: 4,
-      title: "Aluminijumska Ventilacija",
       category: "aluminum",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Reparacija i farbanje aluminijumskih ventilacijskih elemenata"
+      embedUrl: "https://www.instagram.com/p/DE2RoI4iAjY/embed",
+      title: "Aluminijumska Ventilacija",
+      description: "Reparacija i farbanje aluminijumskih elemenata"
     },
     {
       id: 5,
-      title: "PVC Balkonska Vrata",
       category: "pvc",
-      image: "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      embedUrl: "https://www.instagram.com/p/DGxarOriAqa/embed",
+      title: "PVC Balkonska Vrata",
       description: "Servis i obnova PVC balkonskih vrata"
     },
     {
       id: 6,
+      category: "aluminum",
+      embedUrl: "https://www.instagram.com/p/DHrFEfesPn9/embed",
       title: "Aluminijumski Okviri",
-      category: "aluminum",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Reparacija i promena boje aluminijumskih okvira"
-    },
-    {
-      id: 7,
-      title: "PVC Prozorska Krila",
-      category: "pvc",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Reparacija mehanizma i zaptivača PVC prozorskih krila"
-    },
-    {
-      id: 8,
-      title: "Aluminijumska Fasada",
-      category: "aluminum",
-      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Održavanje i farbanje aluminijumskih fasadnih elemenata"
     }
   ];
 
@@ -70,23 +56,23 @@ export function Portfolio() {
     { id: 'aluminum', label: 'Aluminijumska Stolarija' }
   ];
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+  const filteredPosts = activeFilter === 'all' 
+    ? instagramPosts 
+    : instagramPosts.filter(post => post.category === activeFilter);
 
   return (
     <section id="portfolio" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <div className="container px-4 mx-auto">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
             Naši Radovi
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Pogledajte naše završene projekte reparacije i farbanja PVC i aluminijumske stolarije. 
-            Svaki rad predstavlja našu posvećenost kvalitetu i preciznosti.
+          <p className="max-w-2xl mx-auto mb-8 text-lg text-gray-600">
+            Pogledajte naše završene projekte reparacije i farbanja PVC i aluminijumske stolarije 
+            direktno sa našeg Instagram profila. Svaki rad predstavlja našu posvećenost kvalitetu i preciznosti.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             {filters.map((filter) => (
               <Button
                 key={filter.id}
@@ -102,26 +88,58 @@ export function Portfolio() {
               </Button>
             ))}
           </div>
+
+          {/* Instagram Profile Link */}
+          <div className="flex items-center justify-center gap-2 mb-8">
+            <Instagram className="w-5 h-5 text-pink-500" />
+            <a 
+              href="https://www.instagram.com/s_decor_bg?igsh=MThwcWRpaWtvZDRmeg==" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 font-medium text-blue-600 hover:text-blue-700"
+            >
+              Pratite nas na Instagramu @s_decor_bg
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredProjects.map((project) => (
-            <div key={project.id} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={400}
-                height={256}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-                  <p className="text-sm text-gray-200">{project.description}</p>
-                </div>
+        {/* Instagram Posts Grid */}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {filteredPosts.map((post) => (
+            <div key={post.id} className="overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-lg hover:shadow-xl">
+              <div className="relative">
+                <iframe
+                  src={post.embedUrl}
+                  width="100%"
+                  height="400"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency={true}
+                  className="w-full"
+                  title={post.title}
+                ></iframe>
+              </div>
+              <div className="p-4">
+                <h3 className="mb-2 text-lg font-semibold text-gray-900">{post.title}</h3>
+                <p className="text-sm text-gray-600">{post.description}</p>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* View More on Instagram */}
+        <div className="mt-12 text-center">
+          <a 
+            href="https://www.instagram.com/s_decor_bg?igsh=MThwcWRpaWtvZDRmeg==" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-3 font-medium text-white transition-all duration-300 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+          >
+            <Instagram className="w-5 h-5" />
+            Pogledajte sve naše radove na Instagramu
+            <ExternalLink className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>

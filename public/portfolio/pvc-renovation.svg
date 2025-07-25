@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  
+  <!-- Building facade -->
+  <rect x="100" y="50" width="600" height="500" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Multiple Windows (PVC) -->
+  <!-- Row 1 -->
+  <rect x="150" y="100" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#BLUE" stroke-width="3"/>
+  <rect x="290" y="100" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#BLUE" stroke-width="3"/>
+  <rect x="430" y="100" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#BLUE" stroke-width="3"/>
+  <rect x="570" y="100" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#BLUE" stroke-width="3"/>
+  
+  <!-- Row 2 -->
+  <rect x="150" y="220" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3"/>
+  <rect x="290" y="220" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3"/>
+  <rect x="430" y="220" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3"/>
+  <rect x="570" y="220" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3"/>
+  
+  <!-- Row 3 -->
+  <rect x="150" y="340" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3"/>
+  <rect x="290" y="340" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3"/>
+  <rect x="430" y="340" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3"/>
+  <rect x="570" y="340" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3"/>
+  
+  <!-- Window glass -->
+  <rect x="160" y="110" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  <rect x="300" y="110" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  <rect x="440" y="110" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  <rect x="580" y="110" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  
+  <rect x="160" y="230" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  <rect x="300" y="230" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  <rect x="440" y="230" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  <rect x="580" y="230" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  
+  <rect x="160" y="350" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  <rect x="300" y="350" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  <rect x="440" y="350" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  <rect x="580" y="350" width="100" height="80" rx="3" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1"/>
+  
+  <!-- Renovation Tools -->
+  <!-- Ladder -->
+  <rect x="50" y="150" width="15" height="300" fill="#D97706"/>
+  <rect x="80" y="150" width="15" height="300" fill="#D97706"/>
+  <rect x="50" y="200" width="45" height="5" fill="#D97706"/>
+  <rect x="50" y="250" width="45" height="5" fill="#D97706"/>
+  <rect x="50" y="300" width="45" height="5" fill="#D97706"/>
+  <rect x="50" y="350" width="45" height="5" fill="#D97706"/>
+  <rect x="50" y="400" width="45" height="5" fill="#D97706"/>
+  
+  <!-- Worker Figure -->
+  <circle cx="75" cy="130" r="15" fill="#F3E8FF"/>
+  <rect x="65" y="145" width="20" height="30" rx="10" fill="#3B82F6"/>
+  <rect x="62" y="175" width="8" height="25" rx="4" fill="#1E40AF"/>
+  <rect x="82" y="175" width="8" height="25" rx="4" fill="#1E40AF"/>
+  
+  <!-- Renovation Progress Indicators -->
+  <!-- Completed (green checkmarks) -->
+  <circle cx="210" cy="80" r="12" fill="#10B981"/>
+  <path d="M205 80 L208 83 L215 75" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <circle cx="350" cy="80" r="12" fill="#10B981"/>
+  <path d="M345 80 L348 83 L355 75" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- In Progress (yellow) -->
+  <circle cx="490" cy="80" r="12" fill="#F59E0B"/>
+  <rect x="485" y="75" width="10" height="10" rx="2" fill="white"/>
+  
+  <!-- Pending (gray) -->
+  <circle cx="630" cy="80" r="12" fill="#6B7280"/>
+  <circle cx="630" cy="80" r="4" fill="white"/>
+  
+  <!-- Title -->
+  <rect x="200" y="560" width="400" height="35" rx="17" fill="#3B82F6"/>
+  <text x="400" y="582" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">RENOVACIJA PVC STOLARIJE</text>
+</svg>
