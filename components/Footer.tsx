@@ -65,7 +65,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 S_Decor_Bg. Sva prava zadržana.</p>
+          <p>&copy; 2025 S_Decor_Bg. Sva prava zadržana. | Created by <a href="https://nikolacv.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors font-medium">nikola-apps</a></p>
         </div>
       </div>
     </footer>
