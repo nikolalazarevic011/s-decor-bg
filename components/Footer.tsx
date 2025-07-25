@@ -37,7 +37,12 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span>farbanjepvcialustolarije@gmail.com</span>
+                <a 
+                  href="mailto:farbanjepvcialustolarije@gmail.com"
+                  className="hover:text-white transition-colors"
+                >
+                  farbanjepvcialustolarije@gmail.com
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Instagram className="w-4 h-4" />

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Window Frame -->
+  <rect x="100" y="50" width="600" height="500" rx="20" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="4"/>
+  
+  <!-- Inner Window Frame -->
+  <rect x="130" y="80" width="540" height="440" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  
+  <!-- Window Panes -->
+  <rect x="150" y="100" width="240" height="200" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="410" y="100" width="240" height="200" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="150" y="320" width="240" height="180" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="410" y="320" width="240" height="180" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  
+  <!-- Window Handle -->
+  <circle cx="620" cy="300" r="15" fill="#374151"/>
+  <rect x="605" y="295" width="30" height="10" rx="5" fill="#6B7280"/>
+  
+  <!-- Repair Tools -->
+  <!-- Screwdriver -->
+  <line x1="750" y1="120" x2="750" y2="200" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+  <rect x="745" y="90" width="10" height="30" rx="5" fill="#1F2937"/>
+  
+  <!-- Wrench -->
+  <g transform="rotate(45 50 150)">
+    <rect x="40" y="140" width="60" height="8" rx="4" fill="#10B981"/>
+    <circle cx="45" cy="144" r="6" fill="#059669" stroke="#047857" stroke-width="1"/>
+    <circle cx="95" cy="144" r="6" fill="#059669" stroke="#047857" stroke-width="1"/>
+  </g>
+  
+  <!-- Repair indicators -->
+  <!-- Before/After arrows -->
+  <path d="M50 400 L100 400 M90 390 L100 400 L90 410" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- "Repaired" checkmark -->
+  <circle cx="720" cy="450" r="20" fill="#10B981"/>
+  <path d="M710 450 L718 458 L730 442" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- PVC text -->
+  <text x="400" y="580" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="24" font-weight="bold">PVC PROZOR</text>
+</svg>

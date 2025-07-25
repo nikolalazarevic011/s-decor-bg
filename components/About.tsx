@@ -64,11 +64,11 @@ export function About() {
           <div className="lg:order-2">
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                src="/pvc-window-repair.svg"
                 alt="Reparacija PVC prozora"
                 width={600}
                 height={500}
-                className="rounded-lg shadow-xl w-full h-[500px] object-cover"
+                className="rounded-lg shadow-xl w-full h-[500px] object-contain bg-white p-8"
               />
               <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white p-6 rounded-lg shadow-lg">
                 <div className="text-2xl font-bold">8+</div>

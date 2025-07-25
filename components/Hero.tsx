@@ -64,22 +64,7 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Paint Gun Display */}
-            <div className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-              <div className="flex-shrink-0">
-                <Image 
-                  src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                  alt="Profesionalni pištolj za farbanje"
-                  width={64}
-                  height={64}
-                  className="w-16 h-16 object-contain"
-                />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">Profesionalna Oprema</h3>
-                <p className="text-sm text-gray-600">Koristimo najkvalitetniju opremu za savršene rezultate</p>
-              </div>
-            </div>
+
           </div>
 
           <div className="lg:order-2">
@@ -92,17 +77,7 @@ export function Hero() {
                 className="rounded-lg shadow-2xl w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
-              
-              {/* Paint Gun Overlay */}
-              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-lg shadow-lg">
-                <Image 
-                  src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                  alt="Profesionalni pištolj za farbanje"
-                  width={48}
-                  height={48}
-                  className="w-12 h-12 object-contain"
-                />
-              </div>
+
             </div>
           </div>
         </div>
