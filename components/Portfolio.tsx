@@ -115,7 +115,7 @@ export function Portfolio() {
                   height="400"
                   frameBorder="0"
                   scrolling="no"
-                  allowTransparency="true"
+                  allowTransparency={true}
                   className="w-full"
                   title={post.title}
                 ></iframe>
