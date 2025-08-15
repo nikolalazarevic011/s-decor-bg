@@ -75,7 +75,6 @@ export function Hero() {
                 width={500}
                 height={500}
                 className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
-                priority
               />
             </div>
           </div>

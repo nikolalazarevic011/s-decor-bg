@@ -2,12 +2,12 @@ import { Phone, Mail, Instagram } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8">
+    <footer className="py-12 text-white bg-gray-900">
+      <div className="container px-4 mx-auto">
+        <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="text-xl font-semibold mb-4">S_Decor_Bg</h3>
-            <p className="text-gray-400 mb-4">
+            <h3 className="mb-4 text-xl font-semibold">S_Decor_Bg</h3>
+            <p className="mb-4 text-gray-400">
               Specijalizovani za reparaciju, farbanje i kompletnu obnovu PVC i aluminijumske stolarije. 
               Profesionalan pristup sa garancijom kvaliteta.
             </p>
@@ -18,7 +18,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Naše Usluge</h4>
+            <h4 className="mb-4 font-semibold">Naše Usluge</h4>
             <ul className="space-y-2 text-gray-400">
               <li>Reparacija PVC Stolarije</li>
               <li>Reparacija Aluminijumske Stolarije</li>
@@ -29,13 +29,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Kontakt</h4>
+            <h4 className="mb-4 font-semibold">Kontakt</h4>
             <div className="space-y-3 text-gray-400">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
                 <a 
                   href="tel:+381607473865"
-                  className="hover:text-white transition-colors"
+                  className="transition-colors hover:text-white"
                 >
                   +381 60 7473 865
                 </a>
@@ -44,7 +44,7 @@ export function Footer() {
                 <Mail className="w-4 h-4" />
                 <a 
                   href="mailto:farbanjepvcialustolarije@gmail.com"
-                  className="hover:text-white transition-colors"
+                  className="transition-colors hover:text-white"
                 >
                   farbanjepvcialustolarije@gmail.com
                 </a>
@@ -55,7 +55,7 @@ export function Footer() {
                   href="https://www.instagram.com/s_decor_bg?igsh=MThwcWRpaWtvZDRmeg==" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className="transition-colors hover:text-white"
                 >
                   @s_decor_bg
                 </a>
@@ -64,8 +64,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 S_Decor_Bg. Sva prava zadržana. | Created by <a href="https://nikolacv.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors font-medium">nikola-apps</a></p>
+        <div className="pt-8 mt-8 text-center text-gray-400 border-t border-gray-800">
+          <p>&copy; 2025 S_Decor_Bg. Sva prava zadržana. | Created by <a href="https://nikola-apps.com" target="_blank" rel="noopener noreferrer" className="font-medium text-blue-400 transition-colors hover:text-blue-300">nikola-apps</a></p>
         </div>
       </div>
     </footer>
